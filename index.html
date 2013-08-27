@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head><title>E36</title>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAALUlE QVQ4y2NctWrVAQY84Pnz5xvwyTMxUAhGDRgMBrAQimdJScmA0UAc9gYAAMAKCkW3xMaVAAAAAElF TkSuQmCC");
+}
+.layers {
+  position:relative;
+}
+.layers * {
+  position:absolute;
+}
+input { vertical-align: bottom;}
+label:after { content:":";}
+label{min-width: 120px; display:inline-block; text-align:right;}
+fieldset {
+  display:inline-block;
+  width: 30%;
+}
+</style>
+</head>
+<body id="e36_1">
+<div class="controls">
+<fieldset>
+<p>
+  <label for="e36_1_top_r_value">R for top</label>
+  <input id="e36_1_top_r_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_top_r_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_top_r"/>
+</p>
+<p>
+  <label for="e36_1_top_g_value">G for top</label>
+  <input id="e36_1_top_g_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_top_g_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_top_g"/>
+</p>
+<p>
+  <label for="e36_1_top_b_value">B for top</label>
+  <input id="e36_1_top_b_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_top_b_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_top_b"/>
+</p>
+<p>
+  <label for="e36_1_top_a_value">A for top</label>
+  <input id="e36_1_top_a_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_top_a_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_top_a"/>
+</p>
+<p>
+  <label for="e36_1_top_l_value">L for top</label>
+  <input id="e36_1_top_l_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_top_l_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_top_l"/>
+</p>
+<p>
+  <input id="e36_1_top_hsl" type="hidden" name="e36_1_top_hsl"/>
+</p>
+</fieldset>
+
+<fieldset>
+<p>
+  <label for="e36_1_side_r_value">R for side</label>
+  <input id="e36_1_side_r_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_side_r_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_side_r"/>
+</p>
+<p>
+  <label for="e36_1_side_g_value">G for side</label>
+  <input id="e36_1_side_g_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_side_g_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_side_g"/>
+</p>
+<p>
+  <label for="e36_1_side_b_value">B for side</label>
+  <input id="e36_1_side_b_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_side_b_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_side_b"/>
+</p>
+<p>
+  <label for="e36_1_side_a_value">A for side</label>
+  <input id="e36_1_side_a_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_side_a_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_side_a"/>
+</p>
+<p>
+  <label for="e36_1_side_l_value">L for side</label>
+  <input id="e36_1_side_l_range" type="range" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);"/>
+  <input id="e36_1_side_l_value" type="number" min="0" max="1" step="0.1" value="0.5" onchange="javascript:check(this);" style="width:3em;" name="e36_1_side_l"/>
+</p>
+<p>
+  <input id="e36_1_side_hsl" type="hidden" name="e36_1_side_hsl"/>
+</p>
+</fieldset>
+</div>
+<div class="layers">
+<img src="e36_1_top.png" id="e36_1_top" class="layer01"/>
+<img src="e36_1_side.png" id="e36_1_side" class="layer02"/>
+<img src="e36_1_shadows.png" id="e36_1_shadows" class="layer03"/>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script>
+check = function(e){
+  var m = /(.*)_([rgbal])_(value|range)/gim.exec(e.id),
+    n = m[1],
+    x = (m[3]=='range'?'value':'range'),
+    rgbal = [
+      n+'_r_'+x,
+      n+'_g_'+x,
+      n+'_b_'+x,
+      n+'_a_'+x,
+      n+'_l_'+x
+    ],
+    hsl = m[1]+'_hsl',
+    canvas = document.getElementById(n+'_canvas'),
+    ctx = canvas.getContext('2d');
+
+  document.getElementById(m[1]+'_'+m[2]+'_'+x).value = e.value;
+  rgbal.forEach(function(a,b){rgbal[b] = document.getElementById(a).value*1});
+rgbal.push(128);
+  ctx.drawImage(document.getElementById(n), 0, 0);
+  canvas.addNoise.apply(canvas,rgbal);
+};
+
+HTMLCanvasElement.prototype.addNoise = function(r, g, b, a, l, n) {
+
+    a=a||0;//-.4; // 0.0..1.0
+    l=l||0;//.5;  // 0.0..1.0
+    //(!red&&green)||(alpha=green,green=128);
+    //(!green&&blue)||(brightness=blue,blue=128);
+    r=r||0;   // 0.0..1.0
+    g=g||0;   // 0.0..1.0
+    b=b||0;   // 0.0..1.0
+    n = (n||Math.random())*l
+   
+    r*=255;
+    g*=255;
+    b*=255;
+    a+=.5;
+    l*=255;
+    
+    //console.log({red:r,green:g,blue:b,alpha:alpha,brightness:brightness})
+    
+    var ctx = this.getContext('2d');
+
+    var imageData = ctx.getImageData(0, 0, this.width, this.height),
+        pixels = imageData.data;
+     
+    for (var i = 0, il = pixels.length; i < il; i += 4) {
+        // альфа-композиция
+        !pixels[i]     || (pixels[i]     = pixels[i]     * n / r * a + pixels[i]     * (1 - a));
+        !pixels[i + 1] || (pixels[i + 1] = pixels[i + 1] * n / g * a + pixels[i + 1] * (1 - a));
+        !pixels[i + 2] || (pixels[i + 2] = pixels[i + 2] * n / b * a + pixels[i + 2] * (1 - a));
+        !pixels[i + 3] || (pixels[i + 3] = pixels[i + 3] * n / a * a + pixels[i + 3] * (1 - a));
+    }
+ 
+    ctx.putImageData(imageData, 0, 0);
+};
+domready = function() {
+  [].forEach.call(
+     document.querySelectorAll('.layers img')
+    ,  function (img) {
+      var canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      canvas.id = img.id+'_canvas';
+
+      var ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+      img.parentNode.appendChild(canvas);
+      //img.innerHTML = '';
+  //    img.style.display = 'none';
+  });
+/*
+  [].forEach.call(
+     document.querySelectorAll('.controls input[id*="_hsl_"]')
+    ,function (input) {
+      input.onchange = function(){
+        var id = this.id.replace(/_hsl_\w+$/gim,''),
+          canvas = document.getElementById(id+'_canvas'),
+          rgbal = (canvas.getAttribute('data-rgbal')||',,,,').split(',')
+          r = this.value*1, //Math.round(Math.abs(rgbal[0]-this.value/100)*100)/100,
+          g = rgbal[1]*1||0,
+          b = rgbal[2]*1||0,
+          a = rgbal[3]*1||1,
+          l = rgbal[4]*1||1,
+          img = document.getElementById(id),
+          ctx = canvas.getContext('2d');
+        
+//        img.style.display = 'block';
+        ctx.drawImage(img, 0, 0);
+//        img.style.display = 'none';
+        canvas.setAttribute('data-rgbal',[r,g,b,a,l].join(','));
+
+        console.log(img,[r,g,b,a,l]);
+        canvas.addNoise(r,g,b,a,l);
+      }
+  });*/
+
+};
+
+
+var alreadyrunflag = 0;
+
+if (document.addEventListener)
+    document.addEventListener("DOMContentLoaded", function(){
+        alreadyrunflag=1; 
+        domready();
+    }, false);
+else if (document.all && !window.opera) {
+    document.write('<script type="text/javascript" id="contentloadtag" defer="defer" src="javascript:void(0)"><\/script>');
+    var contentloadtag = document.getElementById("contentloadtag")
+    contentloadtag.onreadystatechange=function(){
+        if (this.readyState=="complete"){
+            alreadyrunflag=1;
+            domready();
+        }
+    }
+}
+
+window.onload = function(){
+  setTimeout("if (!alreadyrunflag){domready}", 0);
+}//]]>
+</script>
+</body>
+</html>
